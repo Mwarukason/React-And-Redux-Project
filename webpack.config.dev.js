@@ -1,10 +1,11 @@
 import path from 'path'
 
 export default {
-  devtools: 'eval-source-map',
+
   //client js file and out middleware doesnt care and save at memory
   entry: path.join(__dirname, '/client/index.js'),
   output: {
+    filename: 'bundle.js',
     path: '/'
   },
   module: {
